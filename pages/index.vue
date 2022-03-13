@@ -3,7 +3,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" class="welcomme">
       <video id="background-video" autoplay loop muted>
-        <source src="../static/Wold.mp4" type="video/mp4">
+        <!-- <source src="https://mega.nz/file/ZPgEiSrK#tlD4TmnKOJlUmYsSUcIG2u52bn1zHbMJNJgzBAdvPSc" type="video/mp4"> -->
       </video>
       <div class="cover">
           <img src="../static/Blooraid_Consortium_Logo1.png" alt="" srcset="">

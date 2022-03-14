@@ -1,6 +1,31 @@
 
 <template>
   <v-row justify="center" align="center">
+    <v-dialog
+      v-model="dialog"
+      persistent
+      max-width="900"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+          Bloo-Drive
+        </v-card-title>
+        <v-card-text  style="height: 450px;">
+          <iframe src="https://gitlab.com/" width="100%" height="100%" style="border:none;"></iframe>
+          </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="green darken-1"
+            text
+            @click="dialog = false"
+          >
+            Quit
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
     <v-col cols="12" class="welcomme">
       <video id="background-video" autoplay loop muted>
         <source src="../static/background.mp4" type="video/mp4">
@@ -12,8 +37,8 @@
       </div>
     </v-col>
     <v-col cols="12" sm="4" md="4" class="box box1">
-      <a href="#" class="cta">
-        <span>Telegram</span>
+      <a href="https://web.telegram.org/z/" class="cta" target="blink">
+        <span>Chat</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>
           <polyline points="8 1 12 5 8 9"></polyline>
@@ -21,8 +46,8 @@
       </a>
     </v-col>
     <v-col cols="12" sm="4" md="4" class="box box2">
-    <a href="#" class="cta">
-        <span>GitLab</span>
+    <a  href="https://gitlab.com/users/sign_in" class="cta" target="blink" > 
+        <span>Drive</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>
           <polyline points="8 1 12 5 8 9"></polyline>
@@ -30,8 +55,8 @@
       </a>
     </v-col>
     <v-col cols="12" sm="4" md="4" class="box box3">
-    <a href="#" class="cta">
-        <span>Google meet</span>
+    <a href="https://meet.google.com/" class="cta" target="blink">
+        <span>Meet</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>
           <polyline points="8 1 12 5 8 9"></polyline>
@@ -46,7 +71,15 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+
+  data () {
+      return {
+        dialog: false,
+        dialog2: false,
+      }
+    },
 }
 </script>
 
@@ -129,6 +162,10 @@ a {
 }
 
 .cta {
+  cursor: pointer;
+  font-family: Avenir, sans-serif;
+  text-decoration: none;
+  color: white !important;
   position: relative;
   margin: auto;
   padding: 19px 22px;

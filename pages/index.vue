@@ -107,7 +107,8 @@ export default {
   z-index: -1; */
 }
 .cover{
-  height: 60vh;
+  /* height: 60vh; */
+  height: 61vh;
   width: 100%;
   background: #0B1A20B6;
   position:absolute;

@@ -46,7 +46,7 @@
       </a>
     </v-col>
     <v-col cols="12" sm="4" md="4" class="box box2">
-    <a  href="https://gitlab.com/users/sign_in" class="cta" target="blink" > 
+    <a  href="https://github.com/login" class="cta" target="blink" > 
         <span>Drive</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>
